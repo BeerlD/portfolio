@@ -1,0 +1,20 @@
+main > button {
+    display: flex;
+    align-items: center;
+    margin-left: 120px;
+    padding: 5px 50px;
+    border-radius: 15px;
+    outline: none;
+    color: darkblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    border: darkblue 2px solid;
+    cursor: pointer;
+    background-color: transparent;
+
+    div {
+        font-size: 1.3em;
+        position: absolute;
+        margin-left: 75px;
+    }
+}

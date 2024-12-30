@@ -7,7 +7,7 @@ section#welcome {
     
     h1, p {
         margin: 20px;
-        width: 50%;
+        width: 200px;
     }
 
     h1 {
@@ -21,16 +21,7 @@ section#welcome {
 }
 
 @media screen AND (max-width: 875px) {
-    body {
-        overflow: auto;
-    }
-    
-    section#welcome {
-        flex-direction: column;
-
-        img {
-            width: 80%;
-            position: relative;
-        }
+    section#welcome > img{
+        display: none;
     }
 }
