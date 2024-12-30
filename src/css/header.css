@@ -1,0 +1,28 @@
+header {
+    padding: 10px;
+    display: flex;
+    justify-content: right;
+
+    img {
+        width: 50px;
+        border-radius: 30px;
+    }
+
+    
+
+    span {
+        display: flex;
+        justify-content: right;
+        width: 100%;
+
+        div {
+            display: flex;
+            align-items: end;
+            cursor: pointer;
+        }
+    }
+
+    h2 {
+        font-family: 'Courier New', Courier, monospace;
+    }
+}

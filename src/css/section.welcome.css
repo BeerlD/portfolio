@@ -1,0 +1,36 @@
+section#welcome {
+    display: flex;
+    padding: 100px;
+    font-family: 'Times New Roman', Times, serif;
+    color: darkblue;
+    font-weight: normal;
+    
+    h1, p {
+        margin: 20px;
+        width: 50%;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    img {
+        right: 0;
+        position: absolute;
+    }
+}
+
+@media screen AND (max-width: 875px) {
+    body {
+        overflow: auto;
+    }
+    
+    section#welcome {
+        flex-direction: column;
+
+        img {
+            width: 80%;
+            position: relative;
+        }
+    }
+}

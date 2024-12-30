@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carlos - BellKun</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+
+        body {
+            overflow: hidden;
+        }
+    </style>
+
+    <link rel="stylesheet" href="./src/css/header.css">
+    <link rel="stylesheet" href="./src/css/section.welcome.css">
+    <script src="./src/scripts/githubApi.js"></script>
+</head>
+<body>
+    <header>
+        <img src="./src/images/discord_icon.png" id="discord">
+        
+        <span>
+            <div>
+                <img id="avatar">
+                <h2>BeerlD</h2>
+            </div>
+        </span>
+    </header>
+
+    <main>
+        <section id="welcome">
+            <span>
+                <h1>Olá, Meu Nome é <b>Carlos</b>.</h1>
+                <p>Eu sou um <b>desenvolvedor centrado na área back-end</b> do Brasil, Pernambuco.</p>
+            </span>
+            
+            <img src="./src/images/bell_cranel.png">
+        </section>
+        
+        <button>Proximo <span>➤</span></button>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
+
+<script type="module">
+    const userInfo = await getUserInfo("BeerlD");
+    const avatarImgElement = document.querySelector("img#avatar");
+    avatarImgElement.src = userInfo.avatar_url;
+</script>
